@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Title</title>
+  <link rel="stylesheet" href="./src/style/index.css">
+  <link rel="stylesheet" href="./src/style/tomorrow-night-eighties.css">
+
+</head>
+
+<body>
+  <h2>
+    Practice1
+  </h2>
+  <p>从某后端接口得到如下数据：</p>
+  <pre><code class="lang-javascript">
+  {
+    data: [
+      ["Anna", 16, "Female", "2004-12-01"],
+      ["Kevin", 22, "Male", "1998-01-21"]
+    ],
+    column: [
+      { name: "name", note: '' },
+      { name: "age", note: '' },
+      { name: "gender", note: '' },
+      { name: "birthday", note: '' }
+    ]
+  }
+  </code></pre>
+  <p>data 是数据，column 是对数据的说明。现写一个函数 parseData，将上面的对象转化为期望的数组以供前端展示所使用：</p>
+  <pre><code class="lang-javascript">
+    [
+      { name: "Anna", age: 16, gender: "Female", birthday: "2004-12-01" },
+      { name: "Kevin", age: 22, gender: "Male", birthday: "1998-01-21" },
+    ]
+  </code></pre>
+  <p>请尽可能使用课程中和ES6手册中所学的内容实现上述需求并使用 <strong>'npm run test'</strong> 命令通过测试</p>
+  <hr/>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- <script src="src/practice1.js"></script> -->
+</body>
+
+</html>

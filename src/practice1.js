@@ -1,0 +1,2 @@
+const parseData
+export { parseData };
