@@ -1,0 +1,2 @@
+const inject
+export { inject };
